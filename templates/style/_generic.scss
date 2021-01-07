@@ -1,0 +1,190 @@
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    // overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// scroolbar
+
+::-webkit-scrollbar {
+    width: 8px; /* for vertical scrollbars */
+    height: 10px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 100, 0.2);
+}
+
+.app {
+
+    width: 100%;
+    background-color: #fefefe;
+
+}
+
+.top-banner {
+
+    background: linear-gradient( -90deg ,#02203c 30%,#001528 90%);
+
+    // height: 30rem;
+
+    position: relative;
+    min-height: 540px;
+    padding: 0 0 60px;
+    color: #02203c;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        border: 1px solid #f2f2f2;
+
+        font-family: Open Sans,Helvetica,Arial,sans-serif;
+
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        align-items: flex-start;
+
+        .box_title {
+            border: 1px solid pink;
+
+            display: flex;
+            align-items: center;
+            margin: 0 0 10px;
+            justify-content: center;
+        }
+
+        .logo {
+            height: 40px;
+            margin: 20px;
+        }
+
+        .title {
+            font-family: Jura,Helvetica,Arial,sans-serif;
+            color: #fff;
+            margin: 0;
+            font-size: 36px;
+            line-height: 1;
+        }
+
+        .menu {
+            border: 1px solid pink;
+
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            // flex: 0 0 auto;
+            margin: 10px 80px 0;
+
+            .menu_item {
+
+                display: inline;
+                position: relative;
+                margin: 0 30px 0 0;
+
+                a {
+
+                    display: inline-block;
+                    color: #fff!important;
+                    font-size: 14px;
+                    text-decoration: none!important;
+                    font-family: Open Sans,Helvetica,Arial,sans-serif;
+                    padding: 0;
+                    background-color: transparent;
+                    border: none;
+
+                    &:after {
+                        display: block;
+                        content: "";
+                        border-bottom: 1px solid #fff;
+                        transform: scaleX(0);
+                        transition: transform .2s ease-in-out;
+                    }
+
+                    &:hover:after {
+                        transform: scaleX(1);
+                    }
+
+
+                }
+
+
+
+            }
+        }
+
+
+        .box_login {
+            border: 1px solid pink;
+
+            flex: 0 1 auto;
+            width: 250px;
+            text-align: center;
+
+            .button {
+                font-family: Open Sans,Helvetica,Arial,sans-serif;
+                background-color: transparent;
+                border-radius: 4px;
+                color: #fff;
+                font-size: 14px;
+                padding: 5px 10px;
+                margin: 3px 0 0;
+                border: 2px solid transparent;
+                transition: border .2s;
+
+                &:hover {
+                    border: 2px solid #626ee3;;
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+    .content {
+
+
+    }
+
+
+}
+
+
+
+.main {
+    
+    background-color: #fefefe;
+    height: 40rem;
+
+
+}
+
+.footer {
+    
+    background-color: #001528;
+    height: 30rem;
+    
+
+}

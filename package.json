@@ -1,0 +1,26 @@
+{
+  "name": "dev-learning",
+  "version": "1.0.0",
+  "description": "Platform to meet teachers, designer and developers to build e-learning solutions",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./tools/start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michele-castenetto/dev-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michele-castenetto/dev-learning/issues"
+  },
+  "homepage": "https://github.com/michele-castenetto/dev-learning#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "chalk": "^4.1.0",
+    "open": "^7.3.0",
+    "serve-handler": "^6.1.3"
+  }
+}
