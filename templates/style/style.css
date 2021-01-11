@@ -420,6 +420,19 @@ a {
   }
 }
 
+@media (max-width: 1400px) {
+  .app_header > .content > .col1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+  }
+  .app_header > .content > .col2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 70%;
+            flex: 1 1 70%;
+  }
+}
+
 .app_header > .content .disclaimer {
   max-width: 500px;
   width: 100%;
@@ -683,7 +696,7 @@ a {
   background-color: #001528;
   font-family: Open Sans,Helvetica,Arial,sans-serif;
   color: #fff;
-  border-top: 1px solid #103f6b;
+  border-top: 0px solid #103f6b;
 }
 
 .app_footer .line {

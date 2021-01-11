@@ -144,6 +144,8 @@
         flex: 1 1 auto;
         min-height: 320px;
 
+
+
         & > .col1 {
             // border: 1px solid pink;
 
@@ -170,6 +172,15 @@
                 display: none;
             }
 
+        }
+
+        @media (max-width: 1400px) {
+            & > .col1 {
+                flex: 1 1 30%;
+            }
+            & > .col2 {
+                flex: 1 1 70%;
+            }
         }
 
 
