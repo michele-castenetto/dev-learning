@@ -1,0 +1,55 @@
+
+.app_header {
+
+
+    & > .content {
+
+        .disclaimer {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        // .col1 {
+        //     flex: 1 1 100%;
+        // }
+    
+        .col2 {
+            // display: none;
+        }
+
+        .box_panel {
+
+
+            .outer_panel {
+                
+                .panel {
+
+                    border: 1px solid pink;
+                    
+                }
+            }
+        }
+
+
+    }
+
+}
+
+
+.app_main {
+
+
+    background-color: #f6f9fc;
+    // affinche si estenda a tutto il suo contenuto
+    // border: 0px solid transparent;
+    display: flex;
+    flex-flow: column;
+
+    min-height: 500px;
+
+    // perchè ci sia spazio per l'immagine in alto
+    padding-top: 150px;
+
+
+}
+

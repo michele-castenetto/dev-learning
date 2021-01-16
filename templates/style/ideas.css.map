@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAKQ,WALG,GAGH,QAAQ,CAER,WAAW,CAAC;EACR,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,MAAM;CACjB;;AART,AAcQ,WAdG,GAGH,QAAQ,CAWR,KAAK,CAAC;EACF,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "ideas.scss"
+    ],
+    "names": [],
+    "file": "ideas.css"
+}

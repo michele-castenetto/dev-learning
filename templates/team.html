@@ -9,6 +9,8 @@
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+    
 
     <link href="./icons/icomoon/style.css" rel="stylesheet">
 
@@ -18,10 +20,10 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
 
     <link href="./style/style.css" rel="stylesheet">
-    
+    <link href="./style/team.css" rel="stylesheet">
 
-    <title>Team</title>
 
+    <title>Dev-Learning</title>
 </head>
 
 <body>
@@ -31,9 +33,73 @@
 
 
 
-        <section class="top-banner">
+        <div class="tab_menu_overlay"></div>
+        <div class="tab_menu">
+
+            <div id="action_close_menu" class="close_button">×</div>
+
+            <a href="./home.html">
+            
+                <div class="box_title">
+                    <!-- <img class="logo" src="./images/logo.png" alt="logo"> -->
+                    <img 
+                        class="logo"
+                        src="./images/logo.svg"
+                    />
+
+                    <h1 class="title"> Dev-Learning </h1>
+                </div>
+
+            </a>
+
+            
+            <ul class="list">
+                <li>
+                    <a href="./team.html">
+                        The team
+                    </a>
+                </li>
+                <li>
+                    <a href="./projects.html">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="./Ideas.html">
+                        Ideas
+                    </a>
+                </li>
+                <li>
+                    <a href="./forum.html">
+                        Forum
+                    </a>
+                </li>
+                <li>
+                    <a href="./workwithus.html">
+                        Work with us
+                    </a>
+                </li>
+                <li>
+                    <a href="./contacts.html">
+                        Contact
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+
+        <section class="app_header">
 
             <header class="header">
+
+
+                <div class="menu_button">
+                    <span id="action_toggle_menu" class="icon-menu"></span>
+                </div>
 
 
                 <a href="./home.html">
@@ -42,7 +108,7 @@
                         <!-- <img class="logo" src="./images/logo.png" alt="logo"> -->
                         <img 
                             class="logo"
-                            src="./images/logo2.svg"
+                            src="./images/logo.svg"
                         />
     
                         <h1 class="title"> Dev-Learning </h1>
@@ -89,7 +155,7 @@
                         </div>
                         
                     </div>
-                    
+
                 </nav>
 
                 
@@ -105,17 +171,20 @@
 
             <div class="content">
 
+
                 <div class="col1">
 
                     <div class="disclaimer">
 
                         <h1>Dev-Learning</h1>
-                        <p>Registrati gratuitamente alla piattaforma aiutaci a costruire l'istruzione di domani</p>
+                        <p>Registrati gratuitamente alla piattaforma ed aiutaci a costruire l'istruzione di domani</p>
                         <button class="button_action">Unisciti a noi</button>
 
                     </div>
 
                 </div>
+
+
 
                 <div class="col2">
 
@@ -125,28 +194,100 @@
     
                             <div class="panel">
                                 
-                                <div class="subpanel">
-                                    <div class="subpanel__header">
+                                <div class="cell cell_arrow">
+                                    <img src="./images/arrow.png" alt="">
+                                </div>
+
+                                <div class="cell cell_window">
+                                    <div class="window_header">
                                         <span>Research</span>
                                     </div>
+                                    <div class="window_main">
+
+                                        <div class="postit" style="top:1rem;left:0.5rem;background-color: #78c078;">
+                                            <div class="post_text" style="width:2.5rem"></div>
+                                            <div class="post_text" style="width:1rem"></div>
+                                            <div class="post_text" style="width:2rem"></div>
+                                        </div>
+                                        <div class="postit postit" style="top:2rem;left:4rem;background-color: #f6b439;">
+                                            <div class="post_text" style="width:2.5rem"></div>
+                                            <div class="post_text" style="width:1rem"></div>
+                                            <div class="post_text" style="width:2rem"></div>
+                                        </div>
+                                        <div class="postit postit3" style="top:1rem;left:6rem;background-color: #eceb9d;">
+                                            <div class="post_text" style="width:2.5rem"></div>
+                                            <div class="post_text" style="width:1rem"></div>
+                                            <div class="post_text" style="width:2rem"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="cell cell_arrow">
+                                    <img class="rotate90" src="./images/arrow.png" alt="">
                                 </div>
                                 
-                                <div class="subpanel">
-                                    <div class="subpanel__header">
-                                        <span>Ideate</span>
-                                    </div>
-                                </div>
-
-                                <div class="subpanel">
-                                    <div class="subpanel__header">
-                                        <span>Prototype</span>
-                                    </div>
-                                </div>
-
-                                <div class="subpanel">
-                                    <div class="subpanel__header">
+                                <div class="cell cell_window">
+                                    <div class="window_header">
                                         <span>Test</span>
                                     </div>
+                                    <div class="window_main">
+
+                                        <div class="face_sad" style="top:1rem;left:1rem">
+                                            <span class="icon-sad"></span>
+                                        </div>
+                                        <div class="face_smile" style="top:1rem;left:4rem">
+                                            <span class="icon-smile"></span>
+                                        </div>
+                                        <div class="face_smile" style="top:1rem;left:7rem">
+                                            <span class="icon-smile"></span>
+                                        </div>
+                                        <div class="face_sad" style="top:4rem;left:1rem">
+                                            <span class="icon-sad"></span>
+                                        </div>
+                                        <div class="face_smile" style="top:4rem;left:4rem">
+                                            <span class="icon-smile"></span>
+                                        </div>
+                                        <div class="face_sad" style="top:4rem;left:7rem">
+                                            <span class="icon-sad"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="cell empty"></div>
+
+                                <div class="cell cell_window ideate">
+                                    <div class="window_header">
+                                        <span>Ideate</span>
+                                    </div>
+                                    <div class="window_main">
+                                        <div class="box_light">
+                                            <span class="icon-lightbulb_on"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cell cell_arrow">
+                                    <img class="rotate270" src="./images/arrow.png" alt="">
+                                </div>
+                                
+                                <div class="cell cell_window prototype">
+                                    <div class="window_header">
+                                        <span>Prototype</span>
+                                    </div>
+                                    <div class="window_main">
+                                        <div class="box_wheel rotating" style="top:2.5rem;left:2rem">
+                                            <span class="icon-cog"></span>
+                                        </div>
+                                        <div class="box_wheel rotating" style="top:0.5rem;left:5rem">
+                                            <span class="icon-cog"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cell cell_arrow">
+                                    <img class="rotate180" src="./images/arrow.png" alt="">
                                 </div>
 
                             </div>
@@ -154,8 +295,6 @@
                         </div>
 
                     </div>
-
-
 
                 </div>
 
@@ -167,14 +306,255 @@
 
 
 
-        <main class="main">
 
-            main
+
+
+
+        <main class="app_main">
+
+
+            <section class="section" id="">
+
+                <div class="profiles">
+
+                    <div class="box_profile">
+
+                        <div class="profile">
+
+                            <h2>Michele Castenetto</h2>
+                            <h4>Co-founder, Developer</h4>
+
+                            <div class="box_media">
+
+                                <div class="box_image">
+                                    <img src="./images/michele.jpg" alt="profile_image">
+                                </div>
+
+                                <div class="box_social"></div>
+
+                            </div>
+
+                            <div class="box_biography">
+
+                                <p>
+                                    Michele si laurea in fisica presso l'università di Trieste. Dopo un'infruttuosa esperienza
+                                    nella magistrale in matematica segue un corso biennale come Tecnico Programmatore Cloud e 
+                                    inizia a lavorare come sviluppatore web presso Tesy Software. 
+                                </p>
+
+                                <p>
+                                    Nel frattempo riprende gli studi in Comunicazione Multimediale presso l'università di Udine.
+                                </p>
+
+                                <p>
+                                    Nel 2020 sulla spinta della pandemia globale e di un interessante progetto universitario 
+                                    co-fonda Dev-Learning per sostenere e promuovere un'istruzione più equa ed accessibile.
+                                </p>
+                                
+                            </div>
+
+
+                        </div>  
+
+                    </div>
+
+
+                    <div class="box_profile">
+
+                        <div class="profile">
+
+                            <h2>Patrizia Pegolo</h2>
+                            <h4>Co-founder, Designer</h4>
+
+                            <div class="box_media">
+
+                                <div class="box_image">
+                                    <img src="./images/patty.jpg" alt="profile_image">
+                                </div>
+
+                                <div class="box_social"></div>
+
+                            </div>
+
+                            <div class="box_biography">
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
+                                    pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
+                                    Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
+                                    in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent
+                                    per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut 
+                                    vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar vitae dolor.
+                                    Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer feugiat 
+                                    faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc. 
+                                </p>
+
+                            </div>
+
+
+                        </div>  
+
+                    </div>
+
+
+                    <div class="box_profile">
+
+                        <div class="profile">
+
+                            <h2>Ted Eveline Mosby</h2>
+                            <h4>Programmer</h4>
+
+                            <div class="box_media">
+
+                                <div class="box_image">
+                                    <img src="./images/ted_mosby.jpg" alt="profile_image">
+                                </div>
+
+                                <div class="box_social"></div>
+
+                            </div>
+
+                            <div class="box_biography">
+
+                                <p>
+                                    Ted is an Ex-Google Software Engineer. After a bachelor in IT at MIT in 2008, he dedicated to full stack web programming.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
+                                    pulvinar facilisis justo mollis, auctor consequat urna.
+                                </p>
+
+                                <p>
+                                    Morbi a bibendum metus. 
+                                    Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
+                                    in pretium orci vestibulum eget.
+                                </p>
+
+                            </div>
+
+
+
+                        </div>  
+
+                    </div>
+
+
+                    <div class="box_profile">
+
+                        <div class="profile">
+
+                            <h2> Robin Scherbatsky </h2>
+                            <h4>Designer</h4>
+                            
+                            <div class="box_media">
+
+                                <div class="box_image">
+                                    <img src="./images/robin-scherbatsky.jpg" alt="profile_image">
+                                </div>
+
+                                <div class="box_social"></div>
+
+                            </div>
+
+                            <div class="box_biography">
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
+                                    pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
+                                    Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
+                                    in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent
+                                    per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut 
+                                    vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar vitae dolor.
+                                    Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer feugiat 
+                                    faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc. 
+                                </p>
+
+                            </div>
+
+
+                        </div>  
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
 
         </main>
 
 
-        <footer class="footer">
+
+
+
+        <footer class="app_footer">
+
+
+
+            <section class="section">
+
+
+
+                <div class="box_col col1">
+
+                    <div class="box_title">
+
+                        <h1 class="title"> Dev-Learning </h1>
+
+                        <img 
+                            class="logo"
+                            src="./images/logo.svg"
+                        />
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="box_col col2">
+
+                    <ul class="list">
+
+                        <li>
+                            <h2 class="subtitle">Explore</h2>
+                            <ul class="">
+
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Ideas</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Contacts</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h2 class="subtitle">Legal</h2>
+                            <ul class="">
+
+                                <li><a href="#">Terms of use</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">Conditions</a></li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+
+                </div>
+
+
+
+
+            </section>
+
+
 
             <div class="line"></div>
 
@@ -218,6 +598,13 @@
 
             </div>
 
+            <div class="line"></div>
+
+            <div class="copyright"> 
+                Copyright © 2021 Dev-Learning, LLC. All rights reserved 
+            </div>
+
+
         </footer>
 
 
@@ -225,12 +612,43 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
+
+
+    <script>
+
+        var _menuActive = false;
+
+
+        document.querySelector("#action_toggle_menu").addEventListener("click", function() {
+            if (_menuActive) {
+                document.querySelector(".tab_menu").classList.remove("active");
+                document.querySelector(".tab_menu_overlay").classList.remove("active");
+            } else {
+                document.querySelector(".tab_menu").classList.add("active");
+                document.querySelector(".tab_menu_overlay").classList.add("active");
+            }
+
+
+        }, false);
+
+
+        document.querySelector("#action_close_menu").addEventListener("click", function() {
+            document.querySelector(".tab_menu").classList.remove("active");
+            document.querySelector(".tab_menu_overlay").classList.remove("active");
+        }, false);
+
+
+
+    </script>
+
 
 </body>
 

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?z7fb9s');
-  src:  url('fonts/icomoon.eot?z7fb9s#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?z7fb9s') format('truetype'),
-    url('fonts/icomoon.woff?z7fb9s') format('woff'),
-    url('fonts/icomoon.svg?z7fb9s#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?4psu1w');
+  src:  url('fonts/icomoon.eot?4psu1w#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?4psu1w') format('truetype'),
+    url('fonts/icomoon.woff?4psu1w') format('woff'),
+    url('fonts/icomoon.svg?4psu1w#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,12 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-opensource_noeuro:before {
-  content: "\e909";
-}
-.icon-opensource_nolock:before {
-  content: "\e90b";
-}
 .icon-collaboration_hands:before {
   content: "\e90c";
 }
@@ -40,8 +34,14 @@
 .icon-opensource_icon:before {
   content: "\e90e";
 }
+.icon-opensource__noeuro:before {
+  content: "\e909";
+}
 .icon-opensource__share:before {
   content: "\e90a";
+}
+.icon-opensource__unlock:before {
+  content: "\e90b";
 }
 .icon-dt_ideate:before {
   content: "\e904";

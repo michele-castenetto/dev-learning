@@ -1,0 +1,21 @@
+.app_header {
+
+
+    & > .content {
+
+        .disclaimer {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        // .col1 {
+        //     flex: 1 1 100%;
+        // }
+    
+        .col2 {
+            display: none;
+        }
+
+    }
+
+}
