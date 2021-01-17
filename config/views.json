@@ -1,0 +1,58 @@
+[   
+
+    { 
+        "name": "NotFound", 
+        "path": "__webpack_public_path__/src/views/notFound/Notfound.jsx"  
+    },
+    { 
+        "name": "Home", 
+        "path": "__webpack_public_path__/src/views/home/Home.jsx"
+    },
+    { 
+        "name": "Profilo", 
+        "path": "../../views/profilo/Profilo.jsx"  
+    },
+    { 
+        "name": "Admin", 
+        "path": "../../views/admin/Admin.jsx"  
+    },
+
+
+    {
+        "name": "Login", 
+        "path": "../../views/home/Home.jsx"
+    },
+    {
+        "name": "Resetpassword", 
+        "path": "../../views/home/Home.jsx",
+        "active": false
+    },
+    {
+        "name": "Changepassword", 
+        "path": "../../views/home/Home.jsx",
+        "active": false
+    },
+
+
+
+
+
+    { 
+        "name": "Test1", 
+        "path": "../../views/test1/Test.jsx"  
+    },
+    { 
+        "name": "Test2", 
+        "path": "../../views/test2/Test.jsx"  
+    },
+    { 
+        "name": "Test3", 
+        "component": "../../views/test3/Test.jsx"  
+    },
+    { 
+        "name": "Test4", 
+        "path": "../../views/test4/Test.jsx"  
+    }
+    
+
+]

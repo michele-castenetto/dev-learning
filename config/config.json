@@ -1,0 +1,27 @@
+{
+    "info": {
+        "appname": "dev-learning",
+        "version": "1.0.0",
+        "date": "16-01-2021",
+        "license": ""
+    },
+    "settings": {
+        "historyType": "hash",
+        "routebasepath": "",
+        "language": "it",
+        "debug": true,
+        "translationsLocal": true,
+        "favicon": "",
+        "theme": "",
+        "loadingUIType": 4,
+        "viewports": {
+            "mobile": 480,
+            "tablet": 920,
+            "desktop_small": 1280
+        },
+        "datapath": "config"
+    },
+    "services": {
+        "api": "http://localhost:3001/"
+    }
+}

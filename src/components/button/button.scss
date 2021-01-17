@@ -1,0 +1,55 @@
+
+// .ts_button {
+//     border: solid 1px rgb(89, 103, 112);
+//     background-color: transparent;
+//     padding: 1rem;
+//     // margin: 1rem;
+//     font-size: 1rem;
+//     // text-align: left;
+//     color: rgb(89, 103, 112);
+//     // text-transform: uppercase;
+//     // font-weight: 700;
+//     // letter-spacing: .05em;
+//     transition: .3s;
+//     cursor: pointer;
+//     outline: none;
+//     &:hover{
+//         background-color: rgb(89, 103, 112);
+//         color: white;
+//     }
+//     &:focus {
+//         outline:0;
+//     }
+// }
+
+
+.ts_button {
+
+    // border: solid 1px #ddd;
+    border: 0;
+    background-color:#eee;
+    padding: 0.8rem;
+    font-size: 1rem;
+    // text-align: left;
+    color: #444;
+    // text-transform: uppercase;
+    // font-weight: 700;
+    // letter-spacing: .05em;
+    transition: .1s;
+    cursor: pointer;
+    outline: none;
+    
+    &.disabled {
+        opacity: 0.5;
+    }
+
+    &:hover{
+        background-color: #ddd;
+        // color: white;
+    }
+    
+    &:focus {
+        outline:0;
+    }
+    
+}

@@ -1,0 +1,118 @@
+@mixin arrow($width, $height, $color, $hovercolor: $color) {
+    width: 0; 
+    height: 0;
+    border-top: $height solid transparent;
+    border-bottom: $height solid transparent;
+    border-left: $width solid $color;
+    transition-duration: .2s;
+    &:hover {
+        border-left: $width solid $hovercolor;
+    }
+    &.arrow-right {
+        transform: rotate(0deg);
+    }
+    &.arrow-left {
+        transform: rotate(180deg);
+    }
+    &.arrow-up {
+        transform: rotate(90deg);
+    }
+    &.arrow-down {
+        transform: rotate(270deg);
+    }
+}
+
+
+
+
+.ts_treeview {
+
+    height: 100%;
+  
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        list-style-type: none;
+    }
+    
+    .box_node {
+
+        cursor: pointer;
+        
+        .node {
+            // border: 1px solid orange;
+            transition-duration: .5s;
+            position: relative;
+            border-bottom: 1px solid #ddd;
+  
+            &:hover {
+                background-color: #eee;
+                color: #333;
+            }
+            
+
+            &.selected {
+                background-color: #eee;
+            }
+
+        }
+  
+    }
+
+
+    .box_arrow {
+        // border: 1px solid purple;
+        position: absolute;
+        right: 1.6rem;
+        top: 50%;
+        transform: translateY(-50%);
+                
+        .arrow {
+            @include arrow(.4rem, .4rem, #333)
+        }
+
+    }
+
+
+    
+    .box_text {
+        // border: 1px solid purple;
+        width: 100%;
+  
+        .text {
+            padding: .5rem * 1.1;
+            line-height: 200%;
+        }
+  
+    }
+
+
+    .box_node .text {
+        padding-left: 1rem;
+    }
+  
+    .box_node .box_node .text {
+        padding-left: 2rem;
+    }
+  
+    .box_node .box_node .box_node .text {
+        padding-left: 3rem;
+    }
+  
+    .box_node .box_node .box_node .box_node .text {
+        padding-left: 4rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

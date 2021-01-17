@@ -1,0 +1,5 @@
+{
+  "globalDevDependencies": {
+    "html-webpack-plugin": "registry:dt/html-webpack-plugin#2.22.2+20160802151720"
+  }
+}

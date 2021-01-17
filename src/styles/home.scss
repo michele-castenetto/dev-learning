@@ -1,0 +1,299 @@
+
+
+.app_main {
+
+
+    // background-color: #fff;
+    background-color: #f6f9fc;
+    // affinche si estenda a tutto il suo contenuto
+    // border: 0px solid transparent;
+    display: flex;
+    flex-flow: column;
+
+    // perchè ci sia spazio per l'immagine in alto
+    padding-top: 150px;
+
+
+    .section {
+
+        min-height: 500px;
+        width: 100%;
+        padding: 30px 20px 30px;
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+
+        @media (max-width: 1160px) {
+            flex-direction: column;
+        }
+
+        .section_left {
+            // border: 1px solid purple;
+            flex: 1 1 50%;
+            
+        }
+        .section_right {
+            // border: 1px solid purple;
+            flex: 1 1 50%;
+            padding: 0 0 0 40px;
+        }
+
+
+        .box_description {
+            
+            max-width: 600px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media (max-width: 1160px) {
+                h2 {
+                    text-align: center;
+                }
+                .button_action {
+                    margin: 0 auto;
+                }
+            }
+
+            h2 {
+                font-size: 35px;
+                margin: 0 0 20px;
+                font-weight: 400;
+                font-family: Ubuntu,Helvetica,Arial,sans-serif;
+                color: #02203c;
+                line-height: 1.3;
+            }
+
+            p {
+                font-family: Open Sans,Helvetica,Arial,sans-serif;
+                margin: 0 0 20px;
+                line-height: 1.7;
+                color: #445d6e;
+            }
+
+            .button_action {
+                width: 10rem;
+            }
+
+        }
+
+
+        &.dark {
+            background-color: #02203c;
+            // color: #f6f9fc;
+            color: #fff;
+
+
+            @media (max-width: 1160px) {
+                .section_left {
+                    // border: 1px solid purple;
+                    flex: 1 1 50%;
+                    order: 2;
+                    
+                }
+                .section_right {
+                    // border: 1px solid purple;
+                    order: 1;
+                    flex: 1 1 50%;
+                }
+            }
+
+
+            .box_description {
+
+                h2 {
+                    font-size: 35px;
+                    margin: 0 0 20px;
+                    font-weight: 400;
+                    font-family: Ubuntu,Helvetica,Arial,sans-serif;
+                    // color: #b3b5b8;
+                    color: #fff;
+                    line-height: 1.3;
+                }
+
+                p {
+                    font-family: Open Sans,Helvetica,Arial,sans-serif;
+                    margin: 0 0 20px;
+                    line-height: 1.7;
+                    // color: #445d6e;
+                    // color: #f6f9fc;
+                    // color: #fff;
+                    color: #bdc5ca;
+                }
+
+                .button_action {
+                    width: 10rem;
+                }
+
+            }
+
+        }
+
+
+
+    }
+
+
+    #design_thinking {
+
+        .cards {
+            // border: 1px solid orange;
+
+            height: 100%;
+            width: 80%;
+            margin: 0 auto;
+
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            align-items: center; 
+            justify-content: center;
+            align-content: center;
+
+            max-width: 400px;
+
+            .box_card {
+                // border: 1px solid orange;
+
+                // flex: 1 1 25%;
+                flex: 1 1 50%;
+                @media (max-width: 768px) {
+                    flex: 1 1 50%;
+                }
+
+                padding: 1rem;
+
+                // min-width: 0;
+                position: relative;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                perspective: 1500px;
+
+                .card {
+                    // border: 1px solid #02203c;
+                    padding-top: 1rem;
+
+                    font-size: 6rem;
+                    // color: #02203c;
+                    color: #fff;
+                    background-color: #02203c;
+
+                    height: 130px;
+                    width: 150px;
+                    // margin: 0 auto;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    flex: 0 0 auto;
+                    // position: absolute;
+                    right: 20px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    box-shadow: 
+                        0 27.5px 40px -17.5px rgba(0,0,0,.4), 
+                        -46.2px 37.5px 40px -17.5px rgba(0,0,0,.4);
+
+                    transform: rotate3d(.5,.866, 0, 15deg) rotate(-2deg);
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+    #opensource {
+
+        .box_icons {
+
+            height: 100%;
+            width: 80%;
+            margin: 0 auto;
+
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            align-items: center; 
+            justify-content: center;
+            align-content: center;
+
+            font-size: 12rem;
+            color: #02203c;
+
+            & > div {
+                margin-right: 2rem;
+            }
+            
+        }
+
+    }
+
+
+    #collaboration {
+
+        .box_icons {
+
+            height: 100%;
+            width: 80%;
+            margin: 0 auto;
+
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            align-items: center; 
+            justify-content: center;
+            align-content: center;
+
+            font-size: 12rem;
+            color: #fff;
+
+            & > div {
+                margin-right: 2rem;
+            }
+
+        }
+
+    }
+
+
+    #platform {
+
+        .box_image {
+            // border: 1px solid orange;
+
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+
+            // text-align: center;
+
+            @media (max-width: 1160px) {
+                h2 {
+                    text-align: center;
+                }
+                .button_action {
+                    margin: 0 auto;
+                }
+            }
+
+            img {
+                // border: 1px solid orange;
+                width: 80%;
+            }
+
+        }
+
+    }
+
+
+
+
+}

@@ -1,0 +1,150 @@
+
+
+@mixin arrow($width, $height, $color, $hovercolor: $color) {
+    width: 0; 
+    height: 0;
+    border-top: $height solid transparent;
+    border-bottom: $height solid transparent;
+    border-left: $width solid $color;
+    transition-duration: .2s;
+    &:hover {
+        border-left: $width solid $hovercolor;
+    }
+    &.arrow-right {
+        transform: rotate(0deg);
+    }
+    &.arrow-left {
+        transform: rotate(180deg);
+    }
+    &.arrow-up {
+        transform: rotate(90deg);
+    }
+    &.arrow-down {
+        transform: rotate(270deg);
+    }
+}
+
+
+
+
+.ts_treeview {
+
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        list-style-type: none;
+    }
+    
+    .box_node {
+
+        // border: 1px solid purple;
+        width: 100%;
+
+        cursor: pointer;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: .1em; 
+        color: #333;
+        
+        .node {
+
+            transition-duration: .5s;
+            position: relative;
+            // overflow-x: visible;
+            // border-bottom: 1px solid #ddd;
+
+            &.selected > .box_text {
+                background-color: #f9f9f9;
+            }
+
+        }
+  
+        .node_childs {
+            height: 0;
+            transition-duration: .5s;
+            // overflow-y: hidden;
+            // overflow-x: visible;
+
+            &.expanded {
+                height: auto;
+            }
+
+        }
+
+    }
+
+
+    .box_arrow {
+        // border: 1px solid purple;
+        position: absolute;
+        right: 1.6rem;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: #eee;
+        // border-radius: 50%;
+        pointer-events: none;
+                        
+        .arrow {
+            @include arrow(.4rem, .4rem, #333)
+        }
+
+    }
+
+
+    
+    .box_text {
+        // border: 1px solid #ddd;
+        width: 100%;
+        
+        // background-color: #fefefe;
+        // box-shadow: 0.1rem 0.1rem 0.01rem 0.01rem rgba(0,0,0,.5);
+        // box-shadow: 1px 1px 10px 1px rgba(0,0,0,.5);
+
+        .text {
+            padding: 1rem;
+            line-height: 2rem;
+        }
+
+        &:hover {
+            // background-color: #eee;
+            // background-color: #ddd;
+            color: #333;
+        }
+  
+    }
+
+
+    .box_node .box_node {
+        color: #999;
+        font-weight: 400;
+        margin-left: 1rem;
+    }
+  
+    .box_node .box_node .box_node {
+        margin-left: 1rem;
+    }
+  
+    .box_node .box_node .box_node .box_node {
+        margin-left: 1rem;
+    }
+
+
+
+
+
+
+
+
+}

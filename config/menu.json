@@ -1,0 +1,34 @@
+[
+
+    {   
+        "id": "home",
+        "label": "Home",
+        "icon_class": "icon-home",
+        "route": "/home"
+    },
+    {   
+        "id": "ideas",
+        "label": "Ideas",
+        "icon_class": "",
+        "route": "/ideas"
+    },
+    {   
+        "id": "platform",
+        "label": "The Platform",
+        "icon_class": "",
+        "route": "/platform"
+    },
+    {   
+        "id": "workwithus",
+        "label": "Work with us",
+        "icon_class": "",
+        "route": "/workwithus"
+    },
+    {   
+        "id": "team",
+        "label": "The Team",
+        "icon_class": "",
+        "route": "/team"
+    }
+
+]

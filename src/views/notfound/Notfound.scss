@@ -1,0 +1,67 @@
+.ts_view__notfound {
+
+
+    .app_main {
+
+        // background-color: #fff;
+        background-color: #f6f9fc;
+        // affinche si estenda a tutto il suo contenuto
+        // border: 0px solid transparent;
+        display: flex;
+        flex-flow: column;
+
+        // perchè ci sia spazio per l'immagine in alto
+        padding-top: 150px;
+
+    }
+
+
+    .notfound {
+
+        min-height: 500px;
+
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: column;
+        
+
+        h1 {
+            color: #02203c;
+            font-size: 8rem;
+        }
+        h2 {
+            color: #02203c;
+            font-size: 6rem;
+        }
+
+    }
+
+
+    .app_header {
+
+        min-height: auto;
+        height: 120px;
+
+        & > .content {
+
+            // .disclaimer {
+            //     margin: 0 auto;
+            // }
+
+            .content_left {
+                // flex: 1 1 100%;
+                display: none;
+            }
+        
+            .content_right {
+                display: none;
+            }
+
+        }
+        
+    }
+
+
+}

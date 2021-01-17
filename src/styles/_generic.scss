@@ -1,0 +1,48 @@
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    // overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// scroolbar
+
+::-webkit-scrollbar {
+    width: 8px; /* for vertical scrollbars */
+    height: 10px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 100, 0.2);
+}
+
+.app {
+
+    width: 100%;
+    background-color: #fefefe;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

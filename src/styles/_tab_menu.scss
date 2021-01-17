@@ -1,0 +1,122 @@
+
+
+.tab_menu_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    opacity: 0;
+    transition: opacity .3s;
+    background-color: #000;
+    z-index: 9040;
+
+    &.active {
+        width: 100%;
+        opacity: .5;
+    }
+
+}
+
+.tab_menu {
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #02203c;
+    box-shadow: 0 0 15px 0 #000;
+    overflow-y: auto;
+    z-index: 9040;
+    transition: transform 300ms ease 0s;
+    
+    opacity: 0;
+    transform: translateX(-300px);
+
+    &.active {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    
+    .close_button {
+        width: 30px;
+        height: 30px;
+        box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+        border: 1px solid rgba(0,0,0,.1);
+        border-radius: 1px;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+        margin: 10px 10px 10px auto;
+        background-color: rgba(0,0,0,.2);
+        transition: background-color .5s;
+        line-height: 28.5px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .box_title {
+        // border: 1px solid pink;
+
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px;
+        justify-content: center;
+
+        .logo {
+            height: 40px;
+            margin: 20px;
+        }
+    
+        .title {
+            font-family: Jura,Helvetica,Arial,sans-serif;
+            color: #fff;
+            margin: 0;
+            font-size: 36px;
+            line-height: 1;
+        }
+
+    }
+
+    ul.list {
+        margin: 0;
+        padding: 0;
+
+        li {
+            text-decoration: none;
+        }
+        a {
+            font-family: Open Sans,Helvetica,Arial,sans-serif;
+            display: block;
+            width: 100%;
+            padding: 20px;
+            border: none;
+            color: #fff;
+            background-color: transparent;
+            transition: background-color .5s;
+            box-sizing: border-box;
+            font-size: 15px;
+            text-decoration: none;
+            text-align: left;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                background-color: #15314b;
+            }
+        }
+
+
+    }
+
+
+
+
+
+}
+
+

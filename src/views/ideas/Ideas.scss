@@ -1,0 +1,38 @@
+.ts_view__ideas {
+
+
+    .app_header {
+
+
+        & > .content {
+    
+            .disclaimer {
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            .content_right {
+                display: none;
+            }
+    
+        }
+    
+    }
+
+
+    .app_main {
+
+        // background-color: #fff;
+        background-color: #f6f9fc;
+        // affinche si estenda a tutto il suo contenuto
+        // border: 0px solid transparent;
+        display: flex;
+        flex-flow: column;
+
+        // perchè ci sia spazio per l'immagine in alto
+        // padding-top: 150px;
+
+    }
+
+        
+}

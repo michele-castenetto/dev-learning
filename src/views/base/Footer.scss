@@ -1,0 +1,155 @@
+.app_footer {
+    
+    background-color: #001528;
+    // height: 30rem;  
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+    color: #fff;
+
+    border-top: 0px solid #103f6b;
+    
+
+    .line {
+        border-top: 3px solid rgba($color: #fff, $alpha: 0.5);
+    }
+
+
+    .section {
+
+        opacity: 0.5;
+        
+        padding: 1rem;
+        // height: 20rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .section_left {
+            // border: 1px solid orange;
+            display: flex;
+            flex: 1 1 30%;
+        }
+
+        .section_right {
+            // border: 1px solid orange;
+            display: flex;
+            flex: 1 1 70%;
+        }
+
+
+        .box_title {
+            // border: 1px solid orange;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 3rem;
+            opacity: 0.5;
+
+            .title {
+                // border: 1px solid orange;
+
+                font-family: Jura,Helvetica,Arial,sans-serif;
+                color: #fff;
+                margin: 0;
+                font-size: 1.5rem;
+                font-weight: 900;
+                line-height: 1;
+            }
+
+
+            .logo {
+                // border: 1px solid orange;
+
+                width: 5rem;
+                margin: 1rem;
+            }
+    
+
+
+        }
+
+
+
+        // ------------------
+        
+        .list {
+            // border: 1px solid orange;
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .list li {
+            flex: 1 1 50%;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .subtitle{
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        li {
+            line-height: 2rem;
+        }
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+    .social {
+
+        // margin-top: 3rem;
+
+
+        // border: 1px solid #fff;
+
+        // border-top: 3px solid rgba($color: #fff, $alpha: 0.5);
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+
+        font-size: 2rem;
+        color: #fff;
+
+        padding: 1rem;
+
+        .social_item {
+            opacity: 0.5;
+            margin: 0 3rem 0 0;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+
+    }
+
+    .copyright {
+        color: #fff;
+        opacity: 0.5;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}

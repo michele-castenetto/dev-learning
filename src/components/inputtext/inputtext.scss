@@ -1,0 +1,24 @@
+.ts_inputtext {
+    
+
+    background-color: transparent;
+    border: solid 1px $dark1;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    width: 100%;
+    transition: .3s;
+
+    &:focus {
+        outline: 0;
+        background-color: #f2f2f2;
+        //     border-color: #66afe9;
+        //     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    }
+    
+    // &.error {
+    //     border-color: #CA1E1E;
+    //     outline: 0;
+    //     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(218, 105, 105, 0.6);
+    // }
+
+}

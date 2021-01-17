@@ -1,0 +1,98 @@
+@mixin _mxbutton($color, $fontsize: 1rem, $padding: 1rem) {
+    border: solid 1px $color;
+    background-color: transparent;
+    padding: $padding;
+    font-size: $fontsize;
+    margin: $margin;
+    color: $color;
+    transition: .3s;
+    cursor: pointer;
+    &:hover{
+        background-color: $color;
+        color: white;
+    }
+}
+
+
+
+@mixin user-select-none() {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+
+// arrow
+
+@mixin arrow($width, $height, $color, $hovercolor) {
+    width: 0; 
+    height: 0;
+    border-top: $height solid transparent;
+    border-bottom: $height solid transparent;
+    border-left: $width solid $color;
+    transition-duration: .2s;
+    &:hover {
+        border-left: $width solid $hovercolor;
+    }
+    &.arrow-right {
+        transform: rotate(0deg);
+    }
+    &.arrow-left {
+        transform: rotate(180deg);
+    }
+    &.arrow-up {
+        transform: rotate(90deg);
+    }
+    &.arrow-down {
+        transform: rotate(270deg);
+    }
+}
+
+  
+
+// ##TODO serve ?
+@mixin box_shadow($width) {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    width: $width;
+    padding: $m2;
+}
+
+
+// Padding trick per avere elementi flottanti di altezza pari alla larghezza
+@mixin box_square($width, $height: $width) {
+    width: $width; 
+    padding-bottom: $height;
+}
+
+
+
+// ##TODO grid system
+
+@mixin box_row() {
+    &:after {
+        content:'';
+        display:block;
+        clear: both;
+    }
+}
+@mixin box_col($width: auto, $height: auto) {
+    display: block;
+    float: left;
+    width: $width; 
+    height: $height;
+}
+
+@mixin box_col_reset() {
+    float: none;
+    width: 100%; 
+    height: auto;
+}
+
+.box_row {
+    @include box_row();
+}

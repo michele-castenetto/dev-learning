@@ -1,0 +1,22 @@
+{
+
+    "logo": "",
+    
+    "sliderImages": [
+        {
+            "url": "https://apps.tesysoftware.com/public/stocco/images/home/1.jpg"
+        },
+        {
+            "url": "https://apps.tesysoftware.com/public/stocco/images/home/2.jpg"
+        },
+        {
+            "url": "https://apps.tesysoftware.com/public/stocco/images/home/3.jpg"
+        },
+        {
+            "url": "https://apps.tesysoftware.com/public/stocco/images/home/4.jpg"
+        },
+        {
+            "url": "https://apps.tesysoftware.com/public/stocco/images/home/5.jpg"
+        }
+    ]
+}
