@@ -63,7 +63,9 @@
     "bluebird": "^3.7.1",
     "bootstrap": "^4.2.1",
     "detect-passive-events": "^1.0.4",
+    "firebase": "^8.2.3",
     "history": "^4.7.2",
+    "html-react-parser": "^1.2.1",
     "i18next": "^19.4.4",
     "i18next-xhr-backend": "^3.2.2",
     "mobx": "^4.8.0",
@@ -83,9 +85,12 @@
     "react-select": "^2.0.0-beta.7",
     "react-slick": "^0.25.2",
     "react-switch": "^4.1.0",
-    "react-table": "^7.0.0-rc.10",
+    "react-table": "^7.6.3",
     "react-tooltip": "^3.11.1",
+    "react-uuid": "^1.0.2",
+    "recharts": "^2.0.4",
     "route-parser": "0.0.5",
-    "signals": "^1.0.0"
+    "signals": "^1.0.0",
+    "uuidv4": "^6.2.6"
   }
 }

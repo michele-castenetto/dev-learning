@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import "./inputtext.scss";
+import "./Inputtext.scss";
 
 
 // ##OLD

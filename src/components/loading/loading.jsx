@@ -1,6 +1,8 @@
 
 import React, { Component } from 'react';
-import './loading.scss';
+
+
+import './Loading.scss';
 
 
 const Obscurer = () => <div className='obscurer'></div>;

@@ -9,6 +9,13 @@ import RouterStore from '__src/stores/core/router.store.js';
 import AuthStore from '__src/stores/core/auth.store.js';
 // ui store
 import UIStore from '__src/stores/core/ui.store.js';
+// firebase store
+import FirebaseStore from '__src/stores/core/firebase.store.js';
+// ideas store
+import IdeasStore from '__src/stores/core/ideas.store.js';
+
+
+
 
 
 const appStore = new AppStore();
@@ -18,11 +25,19 @@ const languageStore = new LanguageStore(appStore);
 const routerStore = new RouterStore(appStore);
 const authStore = new AuthStore(appStore);
 const uiStore = new UIStore(appStore);
+const firebaseStore = new FirebaseStore(appStore);
+const ideasStore = new IdeasStore(appStore);
+
+
+
 
 appStore.languageStore = languageStore;
 appStore.routerStore = routerStore;
 appStore.authStore = authStore;
 appStore.uiStore = uiStore;
+appStore.firebaseStore = firebaseStore;
+
+appStore.ideasStore = ideasStore;
 
 
 

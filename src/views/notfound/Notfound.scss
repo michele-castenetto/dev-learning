@@ -1,48 +1,11 @@
 .ts_view__notfound {
 
 
-    .app_main {
-
-        // background-color: #fff;
-        background-color: #f6f9fc;
-        // affinche si estenda a tutto il suo contenuto
-        // border: 0px solid transparent;
-        display: flex;
-        flex-flow: column;
-
-        // perchè ci sia spazio per l'immagine in alto
-        padding-top: 150px;
-
-    }
-
-
-    .notfound {
-
-        min-height: 500px;
-
-
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-flow: column;
-        
-
-        h1 {
-            color: #02203c;
-            font-size: 8rem;
-        }
-        h2 {
-            color: #02203c;
-            font-size: 6rem;
-        }
-
-    }
-
-
     .app_header {
+        // border: 1px solid orange;
 
         min-height: auto;
-        height: 120px;
+        height: 240px;
 
         & > .content {
 
@@ -63,5 +26,48 @@
         
     }
 
+    .app_main {
+
+        // background-color: #fff;
+        background-color: #f6f9fc;
+        // affinche si estenda a tutto il suo contenuto
+        // border: 0px solid transparent;
+        display: flex;
+        flex-flow: column;
+
+        // perchè ci sia spazio per l'immagine in alto
+        // padding-top: 150px;
+
+    }
+
+
+    .notfound {
+
+        min-height: 500px;
+
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: column;
+        
+
+        h1 {
+            color: #02203c;
+            font-size: 12rem;
+            @media (max-width: 576px) {                
+                font-size: 6rem;
+            } 
+        }
+        h2 {
+            color: #02203c;
+            text-align: center;
+            font-size: 6rem;
+            @media (max-width: 576px) {
+                font-size: 3rem;
+            } 
+        }
+
+    }
 
 }

@@ -21,12 +21,20 @@ let MenuItem = ({ onClick, label }) => {
 
 let TabMenu = ({ appstore }) => {
 
-    var menuItems = appstore.menuItems.map((item) => {
+    const { firebaseStore, routerStore } = appstore;
+
+
+    var menuItems = appstore.menuItems
+    .filter((item) => {
+        return firebaseStore.logged || item.needLogged !== true;
+    })
+    .map((item) => {
         return <MenuItem 
             key={item.id}
             label={item.label}
             onClick={() => {
-                appstore.routerStore.execChangePath(item.route);
+                routerStore.execChangePath(item.route);
+                appstore.toggleTabMenu(false);
             }}
         />  
     });
@@ -54,10 +62,10 @@ let TabMenu = ({ appstore }) => {
                 </div>
 
 
-                <a 
-                    // href="./home.html"
+                <a
                     onClick={() => {
-                        appstore.routerStore.execChangePath("/home");
+                        routerStore.execChangePath("/home");
+                        appstore.toggleTabMenu(false);
                     }}
                 >
 
@@ -75,42 +83,7 @@ let TabMenu = ({ appstore }) => {
                 <ul className="list">
                     {menuItems}
                 </ul>
-
-
-                {/* <ul className="list">
-                    <li>
-                        <a href="./team.html">
-                            The team
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./projects.html">
-                            Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./Ideas.html">
-                            Ideas
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./forum.html">
-                            Forum
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./workwithus.html">
-                            Work with us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./contacts.html">
-                            Contact
-                        </a>
-                    </li>
-
-                </ul> */}
-
+                
             </div>
         </react.Fragment>
     );

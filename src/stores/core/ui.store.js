@@ -6,7 +6,7 @@ import AlertContent from '__src/components/alert/alert.jsx';
 import ConfirmContent from '__src/components/alert/confirm.jsx';
 
 import Loadable from 'react-loadable';
-import Loading from '__src/components/loading/loading.jsx';
+import Loading from '__src/components/loading/Loading.jsx';
 
 
 const LoadingBase = () => <div>Loading ...</div>;
@@ -253,7 +253,7 @@ class Store {
         text = (text || "").toString();
         this.showModal(<AlertContent 
             text={text} 
-            closeText={languageStore.translate("uiStore.modal_alert_close_text", "Chiudi")}
+            closeText={"Chiudi"}
             handleClose={() => this.hideModal()}
         />, 'ts_modal_alert')
     };
@@ -265,7 +265,7 @@ class Store {
         this.showModal(<AlertContent
             icon="report_problem"
             text={text} 
-            closeText={languageStore.translate("uiStore.modal_warning_close_text", "Chiudi")}
+            closeText={"Chiudi"}
             handleClose={() => this.hideModal()}
         />, 'ts_modal_warning')
     };
@@ -276,8 +276,8 @@ class Store {
         text = (text || '').toString();
         this.showModal(<ConfirmContent 
             text={text} 
-            confirmText={languageStore.translate("uiStore.modal_confirm_confirm_text", "Conferma")}
-            cancelText={languageStore.translate("uiStore.modal_confirm_cancel_text", "Annulla")}
+            confirmText={"Conferma"}
+            cancelText={"Annulla"}
             handleConfirm={() => { 
                 this.hideModal(); 
                 if (handleConfirm) { handleConfirm(); }

@@ -158,6 +158,23 @@ const _copyIcons = function () {
 };
 
 
+const _copyMedia = function () {
+
+    const mediaPath = path.join(basepath, "media");
+    const srcPaths = `${mediaPath}/**/*`;
+
+    const destPath = path.resolve(distPath, "./media");
+
+    gulp.task('copy_media', function () {
+        return gulp.src(srcPaths, { base: "media" })
+            .pipe(gulp.dest(destPath));
+    });
+
+    gulp.series('copy_media')();
+
+};
+
+
 /**
  * App data and files
  */
@@ -176,6 +193,7 @@ _copyData();
 // _copyExternals();
 _copyImages();
 _copyIcons();
+_copyMedia();
 
 
 

@@ -36,11 +36,7 @@ import init from "__src/init.js";
         ReactDOM.render(
             <Provider appstore={appstore}>
                 <App 
-                    Base={base.BaseView}
-                    Header={base.Header}
-                    Main={base.Main}
-                    Footer={base.Footer}
-                    TabMenu={base.TabMenu}
+                    {...base}
                 />
             </Provider>,
             document.getElementById("app")

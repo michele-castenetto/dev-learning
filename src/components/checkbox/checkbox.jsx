@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import "./checkbox.scss";
+import "./Checkbox.scss";
 
 
 let _count = [];

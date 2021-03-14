@@ -6,12 +6,19 @@ import react from 'react';
 import './Footer.scss';
 
 
-let Social = () => {
+let Social = ({ social = {} }) => {
+
+
+    let facebookUrl = "#";
+    if ((social.facebook || {}).url ) {
+        facebookUrl = (social.facebook || {}).url;
+    }
+
     return (
         <div className="social">
 
             <div className="social_item">
-                <a href="#">
+                <a target="_blank" href={facebookUrl}>
                     <span className="icon-facebook2"></span>
                 </a>
             </div>
@@ -52,7 +59,11 @@ let Social = () => {
 
 
 
-let Footer = () => {
+let Footer = ({ appstore }) => {
+
+    const config = appstore.config;
+    const social = config.social;
+
     return (
 
         <footer className="app_footer">
@@ -124,7 +135,7 @@ let Footer = () => {
         <div className="line"></div>
 
 
-        <Social />
+        <Social social={social}/>
 
 
         <div className="line"></div>

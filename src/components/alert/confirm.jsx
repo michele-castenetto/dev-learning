@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Button from '../button/button.jsx';
+import Button from '../button/Button.jsx';
 
 
-// import "./alert.scss";
+import "./Alert.scss";
 
 
 const ConfirmContent = (props) => {
@@ -12,15 +12,15 @@ const ConfirmContent = (props) => {
     
     return (  
         
-        <div className="ts_modal_confirm">
+        <div className="ui_modal_confirm">
             <div className="content">
                 {text}
             </div>
             <div className="controls">
-                <Button className="ts_button1" handleClick={ () => handleConfirm()}>
+                <Button className="button" handleClick={ () => handleConfirm()}>
                     {confirmText}
                 </Button>
-                <Button className="ts_button1" handleClick={ () => handleCancel()}>
+                <Button className="button" handleClick={ () => handleCancel()}>
                     {cancelText}
                 </Button>
             </div>

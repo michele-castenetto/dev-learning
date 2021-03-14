@@ -1,5 +1,8 @@
 {
   "globalDevDependencies": {
     "html-webpack-plugin": "registry:dt/html-webpack-plugin#2.22.2+20160802151720"
+  },
+  "globalDependencies": {
+    "firebase": "registry:dt/firebase#2.4.1+20160510002910"
   }
 }

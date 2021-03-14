@@ -23,17 +23,28 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
 
         .section_left {
             // border: 1px solid orange;
             display: flex;
             flex: 1 1 30%;
+
+            @media (max-width: 768px) {
+                flex: 1 1 100%;
+                justify-content: center;
+            }
         }
 
         .section_right {
             // border: 1px solid orange;
             display: flex;
             flex: 1 1 70%;
+
+            @media (max-width: 768px) {
+                flex: 1 1 100%;
+                justify-content: center;
+            }
         }
 
 
@@ -124,6 +135,8 @@
         align-items: center;
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
+        align-content: space-between;
 
         font-size: 2rem;
         color: #fff;
@@ -132,7 +145,7 @@
 
         .social_item {
             opacity: 0.5;
-            margin: 0 3rem 0 0;
+            margin: 1rem;
             cursor: pointer;
 
             a {
@@ -149,6 +162,9 @@
         padding: 1rem;
         display: flex;
         justify-content: center;
+        @media (max-width: 576px) {
+            font-size: 0.8rem;
+        } 
     }
 
 

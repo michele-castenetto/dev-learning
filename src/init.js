@@ -3,7 +3,8 @@ import Storage from '__src/libs/storage.js';
 
 
 import { GUID } from "__src/libs/gutils.js";
-import { HttpRequest } from "__src/libs/HttpRequest";
+import { HttpRequest, HttpService, TSRequest, TSResponse, TSHttpService } from "__src/libs/HttpRequest";
+import { WSInterface } from "./wsInterface.js";
 
 
 // views applicazione
@@ -15,10 +16,13 @@ import getViews from '__src/views.js';
 import appstore from '__src/stores.js';
 const {
     languageStore, routerStore, authStore, uiStore,
+    firebaseStore,
 } = appstore;
 
 // ##DEBUG
 window.appstore = appstore;
+
+
 
 
 
@@ -44,8 +48,10 @@ const init = async function() {
         const datapath = config.settings.datapath || "./data/";
         appstore.datapath = datapath;
 
+        const loadingUIType = config.settings.loadingUIType || 4;
+        uiStore.setLoadingUIType(loadingUIType);
 
-        const views = getViews();
+        const views = getViews(loadingUIType);
 
         if (isDebugMode) { console.log("views", views); }
 
@@ -56,8 +62,15 @@ const init = async function() {
         appstore.setMenuItems(menuItems);
         
         // # Init api
+        // ##REF
         // const api = new Api(config.services.api);
         // appstore.api = api;
+
+
+        const httpService = new HttpService(config.services.api);
+        const wsInterface = new WSInterface(httpService);
+        appstore.wsInterface = wsInterface;
+
 
 
         // # Init storages
@@ -75,6 +88,12 @@ const init = async function() {
             namespace: namespace
         });
         appstore.sessionStorage = sessionStorage;
+
+        
+
+        // # Init firebase store
+        
+        firebaseStore.init();
 
         
         // # Init auth store

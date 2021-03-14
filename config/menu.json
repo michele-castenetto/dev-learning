@@ -29,6 +29,13 @@
         "label": "The Team",
         "icon_class": "",
         "route": "/team"
+    },
+    {   
+        "id": "profile",
+        "label": "Profilo",
+        "icon_class": "",
+        "route": "/profile",
+        "needLogged": true
     }
-
+    
 ]

@@ -6,13 +6,13 @@ import './Notfound.scss';
 
 
 
-let View = ({ Base, appstore }) => {
+let View = ({ BaseView, appstore }) => {
 
 
     return(
-        <Base className="ts_view ts_view__notfound">
+        <BaseView className="ts_view ts_view__notfound">
             
-
+            
             <div className="notfound">
                 
                 <h2>Page Not Found</h2>
@@ -20,7 +20,7 @@ let View = ({ Base, appstore }) => {
             </div>
 
 
-        </Base>
+        </BaseView>
     )
 };
 View = inject("appstore")(observer(View));

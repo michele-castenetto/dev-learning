@@ -1,13 +1,13 @@
-import { BaseView, Header, Main, Footer, TabMenu } from "__src/views/base/Base.jsx";
+import { BaseView, HomeView, BaseHeader, HomeHeader, Main, Footer, TabMenu } from "__src/views/base/Base.jsx";
 
 
 export default {
     BaseView, 
-    Header, 
+    HomeView,
+    BaseHeader,
+    HomeHeader,
     Main, 
     Footer,
     TabMenu,
 };
-
-
 

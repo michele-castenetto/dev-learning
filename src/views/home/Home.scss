@@ -13,6 +13,10 @@
         // perchè ci sia spazio per l'immagine in alto
         padding-top: 150px;
 
+        @media (max-width: 768px) {
+            padding-top: 0px;
+        } 
+
     }
 
 
@@ -39,6 +43,9 @@
             // border: 1px solid purple;
             flex: 1 1 50%;
             padding: 0 0 0 40px;
+            @media (max-width: 576px) {
+                padding: 0px;
+            } 
         }
 
 
@@ -155,6 +162,10 @@
             align-content: center;
 
             max-width: 400px;
+            @media (max-width: 576px) {
+                max-width: auto;
+                width: 100%;
+            } 
 
             .box_card {
                 // border: 1px solid orange;
@@ -203,6 +214,12 @@
 
                     transform: rotate3d(.5,.866, 0, 15deg) rotate(-2deg);
 
+                    @media (max-width: 576px) {
+                        font-size: 4rem;
+                        height: 90px;
+                        width: 100px;
+                    } 
+
                 }
 
             }
@@ -232,6 +249,9 @@
 
             & > div {
                 margin-right: 2rem;
+                @media (max-width: 576px) {
+                    margin-right: 0rem;
+                } 
             }
             
         }
@@ -259,6 +279,9 @@
 
             & > div {
                 margin-right: 2rem;
+                @media (max-width: 576px) {
+                    margin-right: 0rem;
+                } 
             }
 
         }

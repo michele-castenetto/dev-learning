@@ -24,11 +24,6 @@
         "component": "Team"
     },
     { 
-        "id": "ideas", 
-        "path": "/ideas",
-        "component": "Ideas"
-    },
-    { 
         "id": "workwithus", 
         "path": "/workwithus",
         "component": "Workwithus"
@@ -36,178 +31,38 @@
 
 
 
-
-
-
-
-
-
-    { 
-        "id": "profilo", 
-        "path": "/profilo",
-        "component": "Profilo"  
-    },
-    { 
-        "id": "admin", 
-        "path": "/admin",
-        "component": "Admin"  
-    },
-    
-
     {
         "id": "login", 
         "path": "/login",
         "component": "Login"
     },
     {
-        "id": "resetpassword", 
-        "path": "/resetpassword",
-        "allowNotLogged": true,
-        "component": "ResetPassword"
-    },
-    {
-        "id": "changepassword", 
-        "path": "/changepassword",
-        "allowNotLogged": true,
-        "component": "ChangePassword"
-    },
-
-
-    { 
-        "id": "stanza", 
-        "path": "/stanza",
-        "component": "Stanza",
-        "initAction": "stanzaStore.stanzaRouteInit",
-        "beforeChangeAction": "stanzaStore.beforeChangeRoute"
-    },
-
-
-    { 
-        "id": "progetti", 
-        "path": "/progetti",
-        "component": "Progetti",
-        "initAction": "carrelloStanzaStore.progettiRouteInit"
+        "id": "register", 
+        "path": "/register",
+        "component": "Register"
     },
     { 
-        "id": "preferiti", 
-        "path": "/preferiti",
-        "component": "Preferiti",
-        "initAction": "carrelloStanzaStore.progettiRouteInit"      
-    },
-    { 
-        "id": "archiviati", 
-        "path": "/archiviati",
-        "component": "Archiviati",
-        "initAction": "carrelloStanzaStore.archiviatiRouteInit"      
+        "id": "profile", 
+        "path": "/profile",
+        "component": "Profile"  
     },
 
-
     { 
-        "id": "progettodettaglio", 
-        "path": "/progettodettaglio",
-        "component": "ProgettoDettaglio",
-        "initAction": "carrelloStanzaStore.progettoDettaglioRouteInit"
+        "id": "platform", 
+        "path": "/platform",
+        "component": "Platform"
     },
     { 
-        "id": "progettoarchiviatodettaglio", 
-        "path": "/progettoarchiviatodettaglio",
-        "component": "ProgettoArchiviatoDettaglio",
-        "initAction": "carrelloStanzaStore.progettoArchiviatoDettaglioRouteInit"
-    },
-
-
-
-    { 
-        "id": "dealer", 
-        "menuId": "administration",
-        "path": "/dealer",
-        "component": "Dealer",
-        "initAction": "dealerStore.dealerRouteInit"
+        "id": "ideas", 
+        "path": "/ideas",
+        "component": "Ideas",
+        "initAction": "ideasStore.routeInit"
     },
     { 
-        "id": "servizi", 
-        "menuId": "administration",
-        "path": "/servizi",
-        "component": "Servizi",
-        "initAction": "dealerStore.serviziRouteInit"
-    },
-    { 
-        "id": "servizidettaglio", 
-        "menuId": "administration",
-        "path": "/servizidettaglio",
-        "component": "ServizioDettaglio"
-    },
-    { 
-        "id": "sconti", 
-        "menuId": "administration",
-        "path": "/sconti",
-        "component": "Sconti",
-        "initAction": "dealerStore.scontiRouteInit"
-    },
-
-
-    { 
-        "id": "clienti", 
-        "menuId": "administration",
-        "path": "/clienti",
-        "component": "Clienti",
-        "initAction": "clientiStore.clientiRouteInit"
-    },
-    { 
-        "id": "clientedettaglio", 
-        "menuId": "administration",
-        "path": "/clientedettaglio",
-        "component": "ClienteDettaglio",
-        "initAction": "clientiStore.clienteDettaglioRouteInit"
-    },
-
-
-
-
-
-
-    { 
-        "id": "collezione", 
-        "active": true,
-        "path": "/collezione",
-        "component": "Collezione",
-        "initAction": "homeStore.collezioneRouteInit"   
-    },    { 
-        "id": "collezioni", 
-        "active": true,
-        "path": "/collezioni",
-        "component": "Collezioni",
-        "initAction": "homeStore.homeRouteInit"   
-    },
-    { 
-        "id": "documentazione", 
-        "path": "/documentazione",
-        "component": "DocumentazioneCommerciale",
-        "initAction": "homeStore.documentazioneRouteInit"
-    },
-
-
-
-
-
-    { 
-        "id": "test1", 
-        "path": "/test1",
-        "component": "Test1"  
-    },
-    { 
-        "id": "test2", 
-        "path": "/test2",
-        "component": "Test2"  
-    },
-    { 
-        "id": "test3", 
-        "path": "/test3",
-        "component": "Test3"  
-    },
-    { 
-        "id": "test4", 
-        "path": "/test4",
-        "component": "Test4"  
+        "id": "idea_detail", 
+        "path": "/idea",
+        "component": "IdeaDetail",
+        "initAction": "ideasStore.routeIdeaDetailInit"
     }
+
 ]

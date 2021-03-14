@@ -311,11 +311,7 @@ class Store {
 
     execChangePath(path) {
 
-        console.log("path", path);
-
         const route = this._findRoute(path);
-
-        console.log("route", route);
 
         runInAction(() => {
             this.lastPath = this.path;

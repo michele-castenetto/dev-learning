@@ -2,9 +2,12 @@ import React from 'react';
 import {inject, observer} from 'mobx-react';
 
 
+import ScrollToTop from "__src/components/ScrollToTop/ScrollToTop.jsx";
+
 import './Home.scss';
 
 
+// ##TODO ?
 let HomeSlider = ({images}) => {
 
     const sliderImages = images.map( (image, index) => {
@@ -111,7 +114,10 @@ DesignThinkingSection = inject("appstore")(observer(DesignThinkingSection));
 
 
 
-let CollaborationSection = () => {
+let CollaborationSection = ({ appstore }) => {
+
+    const { routerStore } = appstore;
+
     return (
         <section className="section dark" id="collaboration">
 
@@ -121,10 +127,15 @@ let CollaborationSection = () => {
 
                     <h2>Collaborazione</h2>
                     
-                    <p> Algorithms and data structures go hand in hand; the solution to virtually any coding interview problem will require the implementation of some kind of abstract data type in order to access and manipulate information. </p>
-                    <p> Our video series on data structures is the ultimate crash course on this important topic. We cover fundamental concepts pertaining to memory, complexity analysis, and Big O notation, and then break down popular data structures to give you a detailed look at how these concepts are applied under the hood. Linked Lists and Binary Trees will never instill fear in your heart again. </p>
+                    <p> La collaborazione tra figure professionali diverse permette di comprendere meglio le esigenze della scuola, delle università, degli istituti di formazione e di tradurle in maniera efficace in un software alla portata di tutti.</p>
+
+                    <p> Per questo la piattaforma è studiata per incentivare la collaborazione tra insegnanti, istruttori, formatori in genere e designer e sviluppatori di soluzioni multimediali.</p>
                     
-                    <button className="button_action"> See More </button>
+                    <button 
+                        className="button_action"
+                        onClick={() => routerStore.execChangePath("/workwithus")}
+                    > See More 
+                    </button>
 
                 </div>
 
@@ -197,7 +208,10 @@ OpensourceSection = inject("appstore")(observer(OpensourceSection));
 
 
 
-let PlatformSection = () => {
+let PlatformSection = ({ appstore }) => {
+
+    const { routerStore } = appstore;
+
     return (
         <section className="section dark" id="platform">
 
@@ -212,7 +226,10 @@ let PlatformSection = () => {
 
                     <p> Un software libero e gratuito a disposizione di istituzioni, scuole e università per contribuira ad una migliore accessibilità e diritto allo studio per tutti. </p>
 
-                    <button className="button_action"> See More </button>
+                    <button 
+                        className="button_action"
+                        onClick={() => routerStore.execChangePath("/platform")}
+                    > See More </button>
 
                 </div>
 
@@ -234,12 +251,13 @@ PlatformSection = inject("appstore")(observer(PlatformSection));
 
 
 
-let View = ({ Base, appstore }) => {
+let View = ({ HomeView, appstore }) => {
 
 
     return(
-        <Base className="ts_view ts_view__home">
-            
+        <HomeView className="ts_view ts_view__home">
+
+            <ScrollToTop scrollStepInPx="50" delayInMs="16.66" />
 
             <DesignThinkingSection />
 
@@ -250,7 +268,7 @@ let View = ({ Base, appstore }) => {
             <PlatformSection />
 
 
-        </Base>
+        </HomeView>
     )
 };
 View = inject("appstore")(observer(View));

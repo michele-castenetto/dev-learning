@@ -5,7 +5,7 @@ import DevTools from 'mobx-react-devtools';
 
 import ReactTooltip from "react-tooltip";
 
-import Loading from '__src/components/loading/loading.jsx';
+import Loading from '__src/components/loading/Loading.jsx';
 import Modal from '__src/components/modal/modal.jsx';
 
 
@@ -22,8 +22,8 @@ class App extends React.Component {
 
         const ViewComponent = routerStore.currentViewComponent;
 
-        const {Base, Header, Main, Footer, TabMenu} = this.props;
-
+        const {BaseView, HomeView, BaseHeader, HomeHeader, Main, Footer, TabMenu} = this.props;
+        
         const loadingUIType = uiStore.loadingUIType;
 
         if (!appstore.initialized) {
@@ -51,8 +51,10 @@ class App extends React.Component {
                 <Loading type={loadingUIType} isLoading={appstore.uiStore.isLoading} />
                 
                 {ViewComponent ? <ViewComponent 
-                    Base={Base}
-                    Header={Header}
+                    BaseView={BaseView}
+                    HomeView={HomeView}
+                    BaseHeader={BaseHeader}
+                    HomeHeader={HomeHeader}
                     Main={Main}
                     Footer={Footer}
                 /> : null} 

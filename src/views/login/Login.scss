@@ -1,0 +1,253 @@
+.ts_view__login {
+    
+
+    .app_header {
+        // border: 1px solid orange;
+
+        min-height: auto;
+
+        height: 140px;
+
+        @media (max-width: 576px) {
+            height: 240px;
+        } 
+
+        
+
+        & > .content {
+            display: none;
+            // .disclaimer {
+            //     margin: 0 auto;
+            // }
+
+            .content_left {
+                // flex: 1 1 100%;
+                display: none;
+            }
+        
+            .content_right {
+                display: none;
+            }
+
+        }
+        
+    }
+
+
+    .app_main {
+        
+        padding: 4rem 0;
+        background-color: #f6f9fc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+    
+    .login_form {
+        
+        // margin-left: 1rem;
+        width: 30rem;
+        max-width: 90vw;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        background-color: #02203c;
+
+        // color: #02203c;
+        // font-size: 12rem;
+        font-family: Open Sans,Helvetica,Arial,sans-serif;
+
+        // padding: 1rem 3rem 3rem;
+        padding: 1rem 1rem 3rem;
+        @media (max-width: 576px) {
+            padding: 1rem 1rem 3rem;
+        } 
+
+
+        border-radius: 5px;
+        box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.3);
+
+
+        h2{
+            font-family: Open Sans,Helvetica,Arial,sans-serif;
+            // color: #02203c;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        // .ts_inputtext2 {
+        //     width: 100%;
+        //     height: 100%;
+        //     margin: 0 0 1em;
+        //     padding: 1em 3em 1em 1.5em;
+        //     border: 1px solid #cccccc;
+        //     border-radius: 0.5em;
+        //     background: #fff;
+        //     resize: none;
+        //     outline: none;
+        //     color: #898989;
+        // }
+        // .ts_inputtext2[required]:focus {
+        //     border-color: #999;
+        // }
+        
+        // .ts_inputtext2_label {
+        //     // font-size: 1.5rem;
+        // }
+
+        // .ts_inputtext2[required]:focus + .ts_inputtext2_label:before,
+        // .ts_inputtext2[required]:valid + .ts_inputtext2_label:before {
+        //     transition-duration: .2s;
+        //     transform: translate(0, -1.5em) scale(0.9, 0.9);
+        // }
+        // .ts_inputtext2[required]:invalid + .ts_inputtext2_label[alt]:before {
+        //     content: attr(alt);
+        // }
+        // .ts_inputtext2[required] + .ts_inputtext2_label {
+        //     display: block;
+        //     pointer-events: none;
+        //     line-height: 1em;
+        //     margin-top: calc(-3em - 2px);
+        //     margin-bottom: calc((3em - 1em) + 2px);
+        // }
+        // .ts_inputtext2[required] + .ts_inputtext2_label:before {
+        //     content: attr(alt);
+        //     display: inline-block;
+        //     margin: 0 calc(1em + 2px);
+        //     padding: 0 2px;
+        //     white-space: nowrap;
+        //     -webkit-transition: 0.3s ease-in-out;
+        //           transition: 0.3s ease-in-out;
+        //     background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+        //     background: #fff;
+        //     background-size: 100% 5px;
+        //     background-repeat: no-repeat;
+        //     background-position: center;
+        //     color: #898989;
+        // }
+        
+        .box_input {
+            width: 80%;
+            @media (max-width: 576px) {
+                width: 100%;
+            } 
+        }
+        
+        .ts_inputtext {
+
+            font-family: Open Sans,Helvetica,Arial,sans-serif;
+            margin-bottom: 1rem;
+            background-color: #fefefe;
+            padding: 1rem;
+
+            border: solid 1px #ccc;
+            width: 100%;
+            font-size: 1rem;
+            border-radius: 5px;
+
+            &:focus {
+                outline: 0;
+                // background-color: #eee;
+                background-color: #f0f0f0;
+            }
+        }
+    
+        p {
+            font-family: Open Sans,Helvetica,Arial,sans-serif;
+            color: #fff;
+        }
+
+        .label {
+            align-self: flex-start;
+        }
+
+        .box_select {
+            width: 80%;
+            margin: 0rem 0 2rem;
+            @media (max-width: 576px) {
+                width: 100%;
+            } 
+        }
+        .ts_select__control {
+            height: 3.5rem;
+        }
+
+
+        .button_action {
+            // width: 10rem;
+            width: 80%;
+            @media (max-width: 576px) {
+                width: 100%;
+            } 
+        }
+
+
+
+        // -----------------------------
+
+        .ts_checkbox {
+            margin-right: 1rem;
+            margin-bottom: .7rem;
+        }
+        
+        .checkbox_line {
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            // color: #333;
+            color: #fff;
+        }
+
+        // .ts_button {
+        //     margin: 1rem 1rem 0 0;
+        //     padding: 1rem 2rem;
+        //     text-transform: uppercase;
+        //     font-size: 1.3rem;
+        //     letter-spacing: .1rem;
+        //     color: white;
+        //     background-color: #333;
+        //     border-radius: .4rem;
+        //     width: 100%;
+
+        //     .button_icon {
+        //         margin-right: 0.5rem;
+        //     }
+        // }
+
+
+        // .button_login {
+        //     display: inline-flex;
+        //     width: 100%;
+        //     background: #222;
+        //     color: white;
+        //     text-transform: uppercase;
+        //     font-size: 1.2rem;
+        //     border: none;
+        //     align-items: center;
+        //     justify-content: center;
+        //     border-radius: .4rem;
+        //     cursor: pointer;
+        //     padding: 1.2rem;
+        //     margin-top: .5rem;
+        // }
+        
+        // .button_changeview {
+        //     cursor: pointer;
+        //     font-size: 1.2rem;
+        //     color: #333;
+        //     font-weight: 500;
+        // }
+
+
+
+
+    }
+    
+}
